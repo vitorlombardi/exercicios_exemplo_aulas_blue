@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto personagem flask</title>
+    <link rel="stylesheet" href="static/style1.css">
+</head>
+<body>
+    <div class="conteiner1">
+
+        <div class="bloco_info"><b>nome do personagem :</b>{{nome1}}</div>
+        
+        <div class="bloco_info"><b>HP:</b>{{hp1}}</div>
+
+        {% if exibir_imagen1 %}
+
+        <div class="bloco_info">
+            <img src="{{imagem_cleiton}}" width="400" alt="cleiton">
+        </div>
+
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background: #eeeeee;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    min-height: calc(100vh - 40px);
+    padding: 20px 0;
+}
+
+.form_wrapper {
+    background: white;
+    border-bottom: 5px solid #3359ec;
+    border-top: 5px solid #3359ec;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    width: 500px;
+}
+
+.form_wrapper .form_bloco,
+.form_wrapper .jogo_bloco {
+    padding: 10px;
+}
+
+.form_wrapper .form_enviar,
+.form_wrapper .jogo_botao {
+    background-color: #3359ec;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.form_wrapper .jogo_escolha {
+    color: #3359ec;
+    font-size: 18px;
+}
+
+.form_wrapper .jogo_escolha-imagem {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}

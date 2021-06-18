@@ -1,0 +1,19 @@
+body{
+    background-image:url('https://th.bing.com/th/id/R3d5320844e67f6285cf086f0442407d8?rik=pUzenyaOwU7qfA&pid=ImgRaw') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.conteiner1{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center ;
+    margin-top: 100px;
+    
+
+}

@@ -1,0 +1,13 @@
+body{
+    background-color:lightpink;
+    font-family: cursive;
+}
+
+.titulo{
+    font-weight: bold;
+    color: dimgray;
+}
+#nome{
+    font-weight: 900;
+    color: grey;
+}

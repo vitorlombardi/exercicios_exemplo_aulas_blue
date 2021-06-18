@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humor Zelda</title>
+    <link rel="stylesheet" href="static/style01.css">
+</head>
+<body>
+    <div class="conteudo">
+        {%if humor%}
+
+        <div class="bloco">
+            
+            <p><b>Nome:</b> {{nome_do_personagem}}</p>
+           
+            
+            <p><b>Idade:</b>{{idade}}</p>
+            
+            <br>
+            
+            <img src="{{imagem1}}" width="300" alt="zelda">
+            <P>Zelda esta serio !</P>
+
+            <div class="botao">
+                <form action="/humor" method="POST">
+                    <button>mudar</button>
+                </form>        
+            </div>    
+            
+        </div>
+
+        {% else %}
+        <div class="bloco_1">
+            <p><b>Nome:</b> {{nome_do_personagem}}</p>
+            
+                <p><b>Idade:</b>{{idade}}</p>
+
+                <img src="{{imagem2}}" width="300" alt="zelda">
+                <P>Zelda esta puto !</P>
+
+                <div class="botao">
+                    <form action="/" method="POST">
+                        <button>voltar</button>
+                    </form>        
+                </div> 
+        </div>
+
+        {%endif%}
+    </div>
+    
+    
+</body>
+</html>

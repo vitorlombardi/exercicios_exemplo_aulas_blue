@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das escolhas</title>
+    <link rel="stylesheet" href="static/style0001.css">
+</head>
+<body>
+    <div class="form_wrapper">
+        {%if not escolha%}
+
+        <form method="POST">
+            <div class="form_bloco">
+                <img src="static/blue.gif" width="100" alt="logo blue">
+            </div>
+            
+            <div class="form_bloco">
+                <label for="nome" class="form_label">
+                    digite o seu nome:
+                </label> 
+                <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Seu nome burrao"
+                required
+                />  
+            </div>
+    
+            <div class="form_bloco">
+                <label for="sobrenome" class="form_label">
+                    digite o seu sobrenome:
+                </label> 
+                <input
+                type="text"
+                name="sobrenome"
+                id="sobrenome"
+                placeholder="Seu sobrenome burrao"
+                required
+                />  
+            </div>
+
+            <div class="form_bloco">
+                <input
+                type="radio"
+                name="escolha"
+                id="escolha_1"
+                value="elfo"
+                checked
+                />
+                <label for="escolha_1">Elfo</label>
+            
+                <input
+                type="radio"
+                name="escolha"
+                id="escolha_2"
+                value="ork"
+                />
+                <label for="escolha_2">ORC</label>
+
+                <input
+                type="radio"
+                name="escolha"
+                id="escolha_3"
+                value="hobbit"
+                />
+                <label for="escolha_3">Hobbit</label>
+            </div>
+            <div class="form_bloco">
+                <input type="submit" class="form_enviar" value="jogar">
+            </div>
+
+        </form>
+
+        {%else%}
+        <div class="jogo_escolha">
+            {{nome}},{{sobrenome}}, você e um <b>{{escolha}}</b>
+        </div>
+
+        <div class="jogo_escolha_img">
+            <img src="{{escolha_imagem}}" alt="imagem de {{escolha}}" width="100%">
+        </div>
+
+        <div class="jogo_bloco">
+            <a href="/" class="jogo_botao">jogar novamente</a>
+        </div>
+
+        {%endif%}
+
+
+    </div>
+
+
+</body>
+</html>

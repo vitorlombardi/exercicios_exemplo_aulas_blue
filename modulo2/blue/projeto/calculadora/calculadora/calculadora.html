@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style_js.css">
+    <meta charset="UTF-8">
+    <title>Calculadora de dano</title>
+    <link rel="shortcut icon" href="fotos/favicon.ico" type="image/x-icon">
+</head>
+<body onload="iniciar()">
+
+    <div class="conteudo">
+
+        <div class="texto_titulo">
+            <p>calculadora de dano</p>
+        </div>
+
+        <div class="container">
+            <div class="texto_conteiner_1">
+                <P>escolha um personagem</P>
+            </div>
+
+            <div class="personagem">
+
+                <div class="selecionar personagem_img" id="samurai">
+                    <img src="../beta/gif/samurai-unscreen.gif"  alt="Samurai">
+                    <p><b>Samurai</b></p>
+                </div>
+
+                <div class="selecionar personagem_img" id="feiticeiro">
+                    <img src="../beta/gif/mago-unscreen.gif"  alt="feiticeiro">
+                    <p><b>Feiticeiro</b></p>
+                </div>
+
+                <div class="selecionar personagem_img" id="Slime">
+                    <img src="../beta/gif/slime.gif"  alt="slime">
+                    <br>
+                    <br>
+                    <p><b>Slime</b></p>
+                </div>
+
+            </div>
+
+            <div class="texto_conteiner_2">
+                <p>escolha com quem atacar</p>
+            </div>
+
+            <div class="golpes">
+
+                <div class="selecionar golpes_img" id="Jorginho" title="Jorginho o guerreiro">
+                    <img src="../beta/gif/espada1-unscreen.gif" alt="Jorginho">
+                    <P><B>Jorginho</B></P>
+                </div>
+
+                <div class="selecionar golpes_img" id="thoia" title="Thoia o feiticeiro">
+                    <img src="../beta/gif/magia-unscreen.gif" alt="thoia">
+                    <P><B>Thoia</B></P>
+                </div>
+
+                <div class="selecionar golpes_img" id="sophia">
+                    <img src="../beta/gif/arco-unscreen.gif" alt="sophia" title="Sophia a caçadora">
+                    <P><B>Sophia</B></P>
+                </div>
+                
+            </div>
+
+            <div class="linha_botao">
+                <button id="calcular">Calcular dano!</button>
+            </div>
+
+            <div class="linha_resposta">
+                <span id="dano"></span>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+
+
+</body>
+</html>

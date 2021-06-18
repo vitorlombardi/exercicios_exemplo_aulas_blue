@@ -1,0 +1,13 @@
+body{
+    background-color: darkslategray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.titulo{
+    font-weight: bolder;
+    color:darkseagreen;
+    
+}
+#nome{
+    font-weight: lighter;
+    color: deeppink;
+}
