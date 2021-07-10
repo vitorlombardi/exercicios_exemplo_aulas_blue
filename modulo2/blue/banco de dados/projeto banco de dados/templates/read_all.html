@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldão da Blue</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/pages/read_all.css">
+</head>
+<body>
+    {% include 'principal.html' %}
+
+    <div class="bloco">
+        <h2>Vizualizar todos os anúncios</h2>
+    </div>
+    <div class="bloco">
+        <table class="tabela">
+            <tr class="tabela_header">
+                <td>Vendedor</td>
+                <td>Nome do anúncio</td>
+                <td>Valor do Produto</td>
+                <td>Imagem</td>
+                <td>Detalhes do anúncio</td>
+            </tr>
+            {% for registro in registros %}
+            <tr>
+                <td>{{ registro["nome_vendedor"] }}</td>
+                <td>{{ registro["nome_produto"] }}</td>
+                <td>{{ registro["valor_produto"] }}</td>
+                <td>
+                    <img 
+                        src="{{ registro['imagem_url']}}" 
+                        alt="{{ registro['nome_produto']}}"
+                    />
+                </td>
+                <td>
+                    <a href="/read/{{registro['id']}}" class="botao">Ver anúncio</a>
+                </td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

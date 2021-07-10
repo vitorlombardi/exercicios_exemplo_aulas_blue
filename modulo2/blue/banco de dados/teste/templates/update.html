@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar anúncio</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/pages/create.css">
+    <link rel="stylesheet" href="../static/pages/update.css">
+</head>
+<body>
+    {% include 'principal.html' %}
+
+    {% if sucesso %}
+
+    <div class="bloco sucesso">
+        <p>Anúncio alterado com sucesso</p>
+    </div>
+
+    {% else %}
+
+    <div class="bloco">
+        <h2>Editar anúncio</h2>
+    </div>
+    <div class="bloco">
+        <form class="form" method="POST">
+            <div class="bloco form_input">
+                <label for="nome_vendedor">Nome vendedor:</label>
+                <input type="text" id="nome_vendedor" name="nome_vendedor">
+            </div>
+            <div class="bloco form_input">
+                <label for="nome_produto">Produto:</label>
+                <input type="text" id="nome_produto" name="nome_produto">
+            </div>
+            <div class="bloco form_input">
+                <label for="valor_produto">Valor do produto:</label>
+                <input type="text" id="valor_produto" name="valor_produto">
+            </div>
+            <div class="bloco form_input">
+                <label for="imagem_url">URL da imagem:</label>
+                <input type="text" id="imagem_url" name="imagem_url">
+            </div>
+            <div class="bloco form_input">
+                <label for="descricao_produto">Descrição do produto:</label>
+                <textarea class="bloco form_input" id="descricao_produto" name="descricao_produto" maxlength="500"></textarea>
+            </div>
+            <div class="bloco form_input">
+                <input type="submit" class="botao" value="Alterar anúncio">
+            </div>
+        </form>
+    </div>
+
+    {% endif %}
+</body>
+</html>

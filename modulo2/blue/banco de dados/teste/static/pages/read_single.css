@@ -1,0 +1,41 @@
+img.img {
+    height: 300px;
+}
+
+.bloco2 {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0 auto;
+}
+
+
+.bloco1 {
+
+    margin: 0 auto;
+    width: 100%;
+    margin-top:10px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.bloco2 p{
+    margin-top: 23px;
+    font-size: 30px;
+}
+
+.bloco3 {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0 auto;
+    width: 35%;
+    margin-left: 430px;
+}
+
+.bloco3 p{
+    margin-top: 23px;
+    font-size: 20px;
+}

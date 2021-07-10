@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dados de compra</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/pages/create.css">
+</head>
+<body>
+
+    {% include 'principal.html' %}
+    {% if comprado %}
+    <h1>sslrgçoesfkç</h1>
+
+    <a href="/dados/{{registro.id}}">parararta</a>
+
+
+
+    {% elif comprado_s %}
+
+
+    <div class="bloco">
+        <p>Deseja confirmar os dados ? 
+
+            <a href="/dados/{{registro.id}}/confirmar" class="botao">Sim</a>
+            <a href="/read" class="botao">Não</a>
+        </p>
+    </div>
+
+    {% elif registro %}
+
+    <div class="bloco">
+        <h3>Confirmar compra</h3>
+    </div>
+
+    <div class="bloco">
+        <form class="form" method="POST">
+
+            <div class="bloco">
+                <div class="form" method="POST">
+                  <div class="bloco form_input">
+                    <label for="nome"> Nome: </label>
+                    <input type="text" id="nome" name="nome" />
+                  </div>
+
+                  <div class="bloco form_input">
+                    <label for="imagem_url"> Endereço: </label>
+                    <input type="text" id="endereco" name="endereco" />
+                  </div>
+          
+                </div>
+
+                <div class="bloco">
+                    <p>Tem certeza que deseja comprar esse produto: <span class="highlight">{{registro.nome_produto}}</span>?<br><br>
+
+                    <div class="bloco form">
+                        <input type="submit" class="botao" value="Comprar" >
+                    </div>
+                    <a href="/read" class="botao">Cancelar</a>
+                   
+                </p>
+                </div>
+            </div>
+        </form>
+    </div> 
+
+    {% else %}
+
+    <div class="bloco comprado">
+        <p>Compra realizada com sucesso!</p>
+    </div>
+ 
+    <div class="bloco comprado">
+        <p>Nome: {{usuario.nome}}</p>
+        <br>
+        <p>endereço: {{usuario.endereco}} !</p>
+        <br>
+        <p>Id da compra: {{id_atribuido}} !</p>
+      
+    </div>
+ 
+   
+    <div class="bloco">
+        <a href="/read" class="botao">Comprar mais</a>
+    </div>
+
+
+    {% endif %}
+
+
+    <script type="texr/javascript">
+
+        function redirecionar(){
+
+            window.location.href = "/dados/{{registro.id}}"; 
+
+        }
+
+    </script>
+
+</body>
+</html>

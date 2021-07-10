@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <meta charset="UTF-8">
+    <title>Calculadora de dano</title>
+    <link rel="shortcut icon" href="../static/fotos/dado1.ico" type="image/x-icon">
+</head>
+<body onload="iniciar()">
+
+    <div class="conteudo">
+
+        <div class="texto_titulo">
+            <p>calculadora de dano</p>
+        </div>
+
+        <div class="container">
+            <div class="texto_conteiner_1">
+                <P><b>Escolha um personagem</b></P>
+            </div>
+
+            <div class="personagem">
+
+                <div class="selecionar personagem_img" id="samurai" title="resquìcios de um samurai morto">
+                    <img src="{{img_samurai}}"  alt="Samurai">
+                    <p><b>{{samurai}}</b></p>
+                </div>
+
+                <div class="selecionar personagem_img" id="feiticeiro" title="um feiticeiro revivido">
+                    <img src="{{img_feiticeiro}}"  alt="feiticeiro">
+                    <p><b>{{feiticeiro}}</b></p>
+                </div>
+
+                <div class="selecionar personagem_img" id="Slime" title="uma bola de gosma?">
+                    <img src="{{img_slime}}"  alt="slime">  
+                    <p><b>{{slime}}</b></p>
+                </div>
+
+            </div>
+
+            <div class="texto_conteiner_2">
+                <p>escolha com quem atacar</p>
+            </div>
+
+            <div class="golpes">
+
+                <div class="selecionar golpes_img" id="Jorginho" title="Jorginho o guerreiro">
+                    <img src="{{img_jorginho}}" alt="Jorginho">
+                    <P><B>{{jorginho}}</B></P>
+                </div>
+
+                <div class="selecionar golpes_img" id="thoia" title="Thoia o feiticeiro">
+                    <img src="{{img_thoia}}" alt="thoia">
+                    <P><B>{{thoia}}</B></P>
+                </div>
+
+                <div class="selecionar golpes_img" id="sophia">
+                    <img src="{{img_sophia}}" alt="sophia" title="Sophia a caçadora">
+                    <P><B>{{sophia}}</B></P>
+                </div>
+                
+            </div>
+
+            <div class="linha_botao">
+                <button id="calcular">Calcular dano!</button>
+            </div>
+
+            <div class="linha_resposta">
+                <span id="dano"></span>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../static/index.js"></script>
+
+
+</body>
+</html>
+
+
+

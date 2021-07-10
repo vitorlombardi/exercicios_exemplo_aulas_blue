@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dados de compra</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/pages/create.css">
+    <link rel="stylesheet" href="/static/pages/dados.css">
+</head>
+<body>
+
+    {% include 'principal.html' %}
+    {% if comprado %}
+    <div class="bloco">
+        <h1>Compra realizada com sucesso</h1>
+    </div>
+    
+    <div class="bloco">
+        <h3> obrigado por comprar</h3>
+    </div>
+    
+    <div class="bloco">
+        <a href="/read" class="botao">Continuar comprando</a>
+    </div>
+   
+    {% elif comprado_s %}
+    
+    <div class="bloco_dados">
+
+        <div class="bloco_dado">
+            <h1>Dados cadastrados com sucesso</h1>
+        </div>
+    
+        <div class="bloco_dado">
+            <p><b>Nome: </b><span>{{nome}}</span> </p>
+            
+        </div>
+
+        <div class="bloco_dado">
+            <p><b>Email: </b><span>{{email}}</span> </p>
+            
+        </div>
+
+        <div class="bloco_dado">
+            <p><b>Endereço: </b>{{endereco}}</p>
+        </div>
+
+        <div class="bloco_dado">
+            <p><b>Código da compra: </b>{{registro.id}}</p>
+        </div>
+
+        <div class="bloco_dado">
+            <p><b>Produto comprado: </b>{{registro.nome_produto}}</p>
+        </div>
+
+        <div class="bloco_dado">
+            <p>Deseja confirmar a compra ? 
+
+                <a href="/dados/{{registro.id}}/confirmar" class="botao">Sim</a>
+                <a href="/read" class="botao">Não</a>
+            </p>
+        </div>
+
+    </div>
+
+    {% elif registro %}
+
+    <div class="bloco_form">
+
+        <div class="bloco">
+            <h2>Confirmar compra</h2>
+        </div>
+
+        <div class="bloco">
+            <h3>Preencha os dados </h3>
+        </div>
+
+        <div class="bloco">
+            <form class="form" method="POST">
+
+                <div class="bloco">
+                    <div class="form" method="POST">
+                        <div class="bloco form_input">
+                            <label for="nome"> Nome: </label>
+                            <input type="text" id="nome" name="nome" />
+                        </div>
+
+                        <div class="bloco form_input">
+                            <label for="endereco"> Endereço: </label>
+                            <input type="text" id="endereco" name="endereco" />
+                        </div>
+
+                        <div class="bloco form_input">
+                            <label for="email"> Email: </label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+                
+                        <div class="bloco">
+                            <div class="bloco form">
+                                <input type="submit" class="botao" value="Comprar" >
+                            </div>
+                            <a href="/read" class="botao">Cancelar</a>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div> 
+
+    </div>
+    {% else %}
+
+        
+    <div class="bloco">
+        <h2>Confirmar compra</h2>
+    </div>
+
+    <div class="bloco">
+        <p>Produto não encontrado ou fora de estoque,<br><br></br>
+            <a href="/read" class="botao">Voltar a comprar</a>
+        </p>
+    </div>
+ 
+   
+    <div class="bloco">
+        <a href="/read" class="botao">Comprar mais</a>
+    </div>
+
+
+    {% endif %}
+
+
+
+</body>
+</html>

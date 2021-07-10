@@ -1,0 +1,53 @@
+.form {
+  width: 600px;
+}
+
+.form_input {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_input label {
+  font-weight: bold;
+  padding-right: 8px;
+}
+
+.form_input input[type="text"],
+select {
+  width: 400px;
+  padding: 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form_input input[type="submit"] {
+  width: 100%;
+}
+
+textarea.bloco.form_input {
+  width: 380px;
+  min-height: 30px;
+  resize: vertical;
+  padding: 8px;
+  margin: 2px;
+  text-align: left;
+  font-weight: bold;
+  font: 400 13.3333px Arial;
+}
+
+.form_input {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.id_atribuido {
+  background: #3359ec;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 20px;
+}

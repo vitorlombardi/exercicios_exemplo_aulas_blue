@@ -1,0 +1,39 @@
+.form_input input[type="email"],
+select {
+  width: 400px;
+  padding: 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+.bloco_form{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bloco_dados{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    border: 1px solid transparent;
+    margin: 0 auto;
+    width: 40%;
+
+}
+
+.bloco_dado{
+
+    display: flex;
+   
+    justify-content: left;
+
+}

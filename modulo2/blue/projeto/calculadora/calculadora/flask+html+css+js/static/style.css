@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: url('https://th.bing.com/th/id/R652da984f0084338430dd314d744faa1?rik=572c0pYSBY5ifw&pid=ImgRaw');
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+.container{
+    
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25b7ba9a-dc48-4015-923b-cb47a37af504/dahit4z-63f51a90-656d-433b-a780-50e6e7e7887a.jpg/v1/fill/w_1600,h_1132,q_75,strp/terras_de_mitrael__mapa_para_rpg_de_mesa__by_rarameth_dahit4z-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEzMiIsInBhdGgiOiJcL2ZcLzI1YjdiYTlhLWRjNDgtNDAxNS05MjNiLWNiNDdhMzdhZjUwNFwvZGFoaXQ0ei02M2Y1MWE5MC02NTZkLTQzM2ItYTc4MC01MGU2ZTdlNzg4N2EuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MotAA9EsCBsN5qp4sEPVHiKFKxTmIu8Tap-FQ8yKdXs');
+    background-repeat: no-repeat;
+    background-size: 115%;
+    border-width: 2px;
+    border-color:red;
+    border-style: solid;
+    margin: 5rem;
+    margin-top: 1rem;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+.container p {
+    color:white;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: lucida 
+}
+.texto_conteiner_2{
+    background-image: url('https://th.bing.com/th/id/R652da984f0084338430dd314d744faa1?rik=572c0pYSBY5ifw&pid=ImgRaw');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-width: 2px;
+    border-color:black;
+    border-style: solid;
+    margin-top: 20px;
+    
+    
+    
+    
+}
+.texto_conteiner_1{
+    background-image: url('https://th.bing.com/th/id/R652da984f0084338430dd314d744faa1?rik=572c0pYSBY5ifw&pid=ImgRaw');
+    border-color:black;
+    border-style: solid ;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-width: 2px;
+    font-size: 30px
+
+}
+
+
+
+.texto_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+
+.personagem{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.personagem img{
+    width: 15rem;
+}
+#samurai{
+    
+    background-image: url('https://th.bing.com/th/id/OIP.AHiLQFIDc7beVcqv-Z4s1AHaP1?pid=ImgDet&rs=1');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+#feiticeiro{
+    
+    background-image: url('https://th.bing.com/th/id/Rcad0ac1565766e4e73274a14a79167e8?rik=%2bgRH1z%2fA4dCppQ&pid=ImgRaw');
+    background-repeat: no-repeat;
+    background-size: 300%;
+    
+}
+
+#Slime{
+    
+    background-image: url('https://i.pinimg.com/736x/44/22/2f/44222ff26682a91502baf4f20f58ab1c--pixel-art-waterfall.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%
+    
+}
+
+
+
+#Jorginho{
+    
+    
+    background-image: url('https://th.bing.com/th/id/Rf0c1ba6215178138ae91e5a56b940a8e?rik=k73tmKbOSqfZJQ&riu=http%3a%2f%2fpixelartmaker.com%2fart%2fc4c45e0d195731d.png&ehk=b%2fcSF12CtcwqcOsEav4RX9uG5cRMmebKrhJBXowR5SY%3d&risl=&pid=ImgRaw');
+    background-repeat: no-repeat;
+    background-size: 225%
+    
+}
+
+#thoia{
+    
+    
+    background-image: url('https://th.bing.com/th/id/Rf0c1ba6215178138ae91e5a56b940a8e?rik=k73tmKbOSqfZJQ&riu=http%3a%2f%2fpixelartmaker.com%2fart%2fc4c45e0d195731d.png&ehk=b%2fcSF12CtcwqcOsEav4RX9uG5cRMmebKrhJBXowR5SY%3d&risl=&pid=ImgRaw');
+    background-repeat: no-repeat;
+    background-size: 263%
+    
+}
+
+#sophia{
+   
+    background-image: url('https://th.bing.com/th/id/Rf0c1ba6215178138ae91e5a56b940a8e?rik=k73tmKbOSqfZJQ&riu=http%3a%2f%2fpixelartmaker.com%2fart%2fc4c45e0d195731d.png&ehk=b%2fcSF12CtcwqcOsEav4RX9uG5cRMmebKrhJBXowR5SY%3d&risl=&pid=ImgRaw');
+    background-repeat: no-repeat;
+    background-size: 210%
+    
+}
+
+.selecionar {
+    border: 5px;
+    border-radius: 50px;
+    border-color:brown;
+    border-style: solid;
+}
+
+
+.golpes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.golpes img{
+    width: 15rem
+}
+
+
+.linha_botao{
+    text-align: center;
+}
+
+
+
+.linha_botao button {
+    border-color: brown;
+    color: #fff;
+    box-shadow: 0 0 40px 40px brown inset, 0 0 0 0 brown;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .linha_botao button:hover {
+    box-shadow: 0 0 10px 0 brown inset, 0 0 10px 4px brown;
+  }
+
+
+.linha_botao button{
+    margin-top: 20px;
+    align-items: center;
+    height: 55px;
+    width: 100px;
+    margin-bottom: 50px;
+    background-color:brown;
+    border-radius: 10px ;
+    cursor: pointer;
+    
+    
+}
+
+.linha_resposta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    color:white;
+    
+    background-color: black;
+    width: 100%;
+    border-width: 1px;
+    border-radius: 20px;
+
+    
+}
+
+.clicado{
+    border: 4px solid blue;
+    border-radius: 50px;
+    padding: 10px
+}
+
+.selecionar {
+    cursor: pointer;
+}
+

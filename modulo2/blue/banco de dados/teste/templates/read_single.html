@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/pages/read_single.css">
+</head>
+<body>
+    
+    {% include 'principal.html' %}
+
+    <div class="bloco1">
+        <div class="bloco2">
+            <p><B>Vendedor: </B>{{ registro.nome_vendedor }}</p>
+        </div>
+
+        <div class="bloco2">
+            <p><B>Produto: </B>{{ registro.nome_produto }}</p>
+        </div>
+
+        <div class="bloco2">
+            <p><B>Valor: </B>{{ registro.valor_produto }}</p>
+        </div>
+
+        <div class="bloco2">
+            <img src="{{ registro.imagem_url }}" alt="{{ registro.nome }}" class="img">
+        </div>
+
+        <div class="bloco2">
+            <p><B>Descrição do produto</B></p>
+        </div>
+
+        <div class="bloco3">
+            <p>{{ registro.descricao_produto }}</p>
+        </div>
+       
+        <br>
+
+        <div class="bloco2">
+            <a href="/dados/{{registro.id}}" class="botao">Comprar</a>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="bloco">
+            <a href="/update/{{registro.id}}" class="botao">mudar anuncio</a>
+        </div>
+
+        <br>
+
+    </div>
+
+</body>
+</html>
