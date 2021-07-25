@@ -1,0 +1,32 @@
+p {
+  text-align: center;
+  margin-top: 0;
+}
+
+.al{
+  background-color: rgb(210, 234, 250);
+} 
+
+.pr{
+
+  background-color: azure;
+}
+
+.pr_bloco{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.al_bloco{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.titolo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
