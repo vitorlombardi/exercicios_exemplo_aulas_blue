@@ -155,22 +155,27 @@ export default class Legumes extends React.Component {
                     <h3>{l.nome}</h3>
                     <img src={l.url} alt={l.nome} />
                     <br />
-                    <button className="botao" onClick={() => this.deletar(index)}>Deletar</button>
-                    <button className="botao"
-                      onClick={() => {
-                        this.setState({
-                          editando: true,
-                          index_editando: index,
-                          nome_legme: l.nome,
-                          imagem_legume: l.url,
-                        });
-                      }}
-                    >
-                      Editar
-                    </button>
+                    <div className="button">
+                      <button className="botao" onClick={() => this.deletar(index)}>Comprar</button>
+                      <br/>
+                      <button className="botao"
+                        onClick={() => {
+                          this.setState({
+                            editando: true,
+                            index_editando: index,
+                            nome_legme: l.nome,
+                            imagem_legume: l.url,
+                          });
+                        }}
+                      >
+                        Mudar anuncio
+                      </button>
+                    </div>
                   </li>
                 ))}
               </ul>
+              <br/>
+              <Link to="/" className="link">Pagina inicial</Link>
             </div>
           </div>
         </main>

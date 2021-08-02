@@ -63,11 +63,14 @@
 }
 
 .vendedor{
+  padding: 1rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
   border: 1px solid black;
   margin: 0 auto;
   border-radius: 10px;
+  margin-bottom: 180%;
   width: 20%;
   box-shadow: 2px 2px black, -1em 0 0.4em rgb(41, 40, 40);
 }
@@ -95,6 +98,14 @@
 .parceiros img{
   max-width: 300px;
   max-height: 200px;
+}
+
+.saiba_mais{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
 }
 
 .corpo img{
@@ -148,3 +159,22 @@
   text-decoration: blue;
   color: blue;
 }
+
+.button{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao{
+  border-radius: 8px;
+}
+
+.botao:hover{
+  background-color: greenyellow;
+  box-shadow: 2px 2px black
+}
+
+

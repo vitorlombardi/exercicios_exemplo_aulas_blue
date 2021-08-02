@@ -9,7 +9,7 @@ import Frutas from './pages/Frutas';
 import Saiba_mais from './pages/saiba_mais'
 import Parceiros from './pages/parceiros'
 import Duvidas from "./pages/duvidas"
-
+import Promocao from "./pages/promocao"
 
 function Routes(){
     return(
@@ -21,6 +21,7 @@ function Routes(){
                 <Route path="/parceiros" component={Parceiros} />
                 <Route path="/sobre" component={Saiba_mais} />
                 <Route path="/duvidas" component={Duvidas} />
+                <Route path="/promocao" component={Promocao} />
             </Switch>        
         </BrowserRouter>
     );

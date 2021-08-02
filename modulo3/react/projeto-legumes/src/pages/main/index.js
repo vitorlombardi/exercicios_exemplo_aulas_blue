@@ -21,10 +21,11 @@ const Main = () =>{
         </main>
         <div className="bloco_perguntas">
           <h2>Seja bem vindo a quitanda da blue </h2>
-          <h2>Oque deseja comprar ?</h2>
+          <h2>O que deseja comprar ?</h2>
         </div>
         <div className="bloco_redireciona">
           <Legumes/>
+          <Promocao/>
           <Frutas/>
         </div>
       </div>
@@ -56,6 +57,19 @@ const Frutas = () =>{
     </div>
 
   )
+}
+
+const Promocao = () => {
+
+  return(
+    <div className="img_fruta">
+      <Link to="/promocao" >
+        <img src="https://www.lojavirtual.com.br/wp-content/uploads/2018/11/Blog-Promoções.png" alt="frutas"/>
+      </Link>
+      <h2>Produtos em promoção</h2>
+    </div>
+  )
+
 }
 
 
