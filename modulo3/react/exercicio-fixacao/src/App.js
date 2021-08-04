@@ -9,34 +9,53 @@
 // 2-) Adicionar a nossa lista de chamada o useEffect simulando o comportamento do componentDidMount
 // e o useEffect simulando o comportamento do componentDidUpdate.
 
-import React, {useState, useEffect} from "react";
+//3-) Explique com suas palavras qual a vantagem de utilizarmos o useMemo.
+//R:o useMemo ele serve para deixar a aplicação “mais leve” para otimizar o código , salvando uma função na memória e sempre deixa em execução não precisando atualizar a página para renderizar . 
+
+// 4-) Utilize na Lista de chamadas criada, o useMemo para exibirmos o total de alunos cadastrados na
+// nossa lista de chamada.
+
+// 5-) Qual a diferença entre o useMemo e o UseCallback?
+//R:o useMemo serve para otimizar uma aplicação, já o useCallbback ser como uma props para mandar uma função de um componente para outro
+
+// 6-) Utilize na lista de chamadas criada o UseCallback no método handleAdd criado.
+
+import React, {useState, useEffect, useMemo, useCallback} from "react";
 import "./App.css";
 
 function App() {
    const[lista, setLista] = useState([
 
-    "Adriano Nascimento",
-    "Carlos Eduardo",
-    "Elias Santana",
-    "Gustavo Cervera",
+     "Adriano Nascimento",
+     "Carlos Eduardo",
+     "Elias Santana",
+     "Gustavo Cervera",
 
    ]); 
+
+  //const[lista, setLista] = useState([])
 
   const[titulo, setTitulo] = useState("Lista de chamada da turma full-Stack") 
   
   const[input, setInput] = useState("")
 
-  function onClick(){
+  const onClick= useCallback(() => {
     setLista([...lista, input]);
     setInput("")
-  }
+  },[input, lista])
 
+  useEffect(() => {
+    const listaStorage = localStorage.getItem("Alunos");
+    if(listaStorage){
+      setLista(JSON.parse(listaStorage))
+    }
+  },[]);
 
   useEffect(() => {
     localStorage.setItem("Alunos", JSON.stringify(lista));
   },[lista]);
-  
-  
+
+  const totalAlunos = useMemo(() => lista.length,[lista])
 
   return(
     <>
@@ -56,6 +75,7 @@ function App() {
               <li key = {l}>{l}</li>
             ))}
           </ul>
+          <span className="totalAlunos">Total de alunos {totalAlunos} cadastrados</span>
         </div>
         <div className="adiciona-aluno">
           <input
