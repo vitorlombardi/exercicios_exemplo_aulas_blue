@@ -1,0 +1,52 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+
+}
+
+.header img{
+  max-width: 150px;
+}
+
+
+
+.conteiner{
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 45%;
+  margin-top: 100px;
+}
+
+.lista{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adiciona-aluno{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input{
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 3px 3px black;
+}
+
+.botao{
+  border-radius: 10px;
+  margin-top: 25px;
+  background-color: lightskyblue;
+  margin-bottom: 25px;
+}
+
+.botao:hover{
+  background-color: greenyellow;
+  box-shadow: 3px 3px black;
+}
