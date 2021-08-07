@@ -16,7 +16,7 @@
 // nossa lista de chamada.
 
 // 5-) Qual a diferença entre o useMemo e o UseCallback?
-//R:o useMemo serve para otimizar uma aplicação, já o useCallbback ser como uma props para mandar uma função de um componente para outro
+//R:o useMemo serve para otimizar uma aplicação, já o useCallbback mandar uma função de um componente para outro
 
 // 6-) Utilize na lista de chamadas criada o UseCallback no método handleAdd criado.
 
