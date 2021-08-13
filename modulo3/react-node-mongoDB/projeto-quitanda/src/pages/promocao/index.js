@@ -59,7 +59,7 @@ export default function Promocao() {
                     <br />
                     <div className="button">
                       <button className="botao" onClick={() => deletar(p._id)}>Comprar</button>
-                      <Link to={`/criar/${p._id}`}>editar</Link>
+                      {/* <Link to={`/criar/${p._id}`}>editar</Link> */}
                     </div>
                   </li>
                 ))}
