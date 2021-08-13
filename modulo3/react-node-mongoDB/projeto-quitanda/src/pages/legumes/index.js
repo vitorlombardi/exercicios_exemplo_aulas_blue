@@ -104,6 +104,7 @@ export default class Legumes extends React.Component {
       valor_legume,
       tipo_produto,
       promocao_produto,
+      idEditando,
     } = this.state;
     return (
       <div className="conteiner">
@@ -119,7 +120,7 @@ export default class Legumes extends React.Component {
             <div className="bloco">
               <h2>
                 {editando
-                  ? `Editando:${legumes[index_editando].nome}`
+                  ? `Editando: ${legumes.find((l) => l._id === idEditando)?.nome}`
                   : "cadastre um novo legume"}
               </h2>
               <form onSubmit={this.onSubmit} className="form">
