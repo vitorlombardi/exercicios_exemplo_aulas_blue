@@ -26,7 +26,20 @@ export default function Criar () {
         //setIdEditando(id);
         //console.log(idEditando)
 
-        await fetch(`${baseUrl}/produtos`, {
+        if (id){
+          await fetch(`${baseUrl}/produtos/${id}`, {
+            method: "PUT",
+            header: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+              nome: nomeProduto,
+              imagemUrl: imagemProduto,
+              valor: valorProduto,
+              tipo: tipoProduto,
+              promocao: promocaoProduto,
+            }),
+          });
+        }else{
+          await fetch(`${baseUrl}/produtos`, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
@@ -42,6 +55,8 @@ export default function Criar () {
           setTipoProduto("")
           setValorProduto("");
           setPromocaoProduto("");
+        }
+        
     }
 
     return (

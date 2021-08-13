@@ -32,7 +32,7 @@ const Duvidas = () =>{
                     <h3>R:Entre em contato com o vendedor ou faça uma reclamação <a href="https://www.reclameaqui.com.br" className="link" target="_blank" rel="noreferrer" >aqui</a></h3>
                     <br/>
                 </div>
-                <Link to="/" className="link" target="_blank">Pagina inicial</Link>
+                <Link to="/" className="link">Pagina inicial</Link>
             </div>
 
 

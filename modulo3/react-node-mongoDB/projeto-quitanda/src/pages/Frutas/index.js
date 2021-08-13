@@ -153,7 +153,7 @@ export default function Frutas() {
                   <li key={index}>
                     <h3>{f.nome}</h3>
                     <img src={f.imagemUrl} alt={f.nome} />
-                    <p><b>{f.valor}</b></p>
+                    <p><b>R$:{f.valor}</b></p>
                     <br />
                     <div className="button">
                       <button className="botao" onClick={() => deletar(f._id)}>comprar</button>

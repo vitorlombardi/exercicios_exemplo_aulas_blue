@@ -190,7 +190,7 @@ export default class Legumes extends React.Component {
                     <h3>{l.nome}</h3>
                     <img src={l.imagemUrl} alt={l.nome} />
                     <p>
-                      <b>valor: {l.valor}</b>
+                      <b>R$:{l.valor}</b>
                     </p>
                     <br />
                     <div className="button">

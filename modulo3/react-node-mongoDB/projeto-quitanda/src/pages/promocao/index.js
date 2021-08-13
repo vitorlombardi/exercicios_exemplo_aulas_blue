@@ -55,7 +55,7 @@ export default function Promocao() {
                   <li key={index}>
                     <h3>{p.nome}</h3>
                     <img src={p.imagemUrl} alt={p.nome} />
-                    <p><b>{p.valor}</b></p>
+                    <p><b>R$:{p.valor}</b></p>
                     <br />
                     <div className="button">
                       <button className="botao" onClick={() => deletar(p._id)}>Comprar</button>
