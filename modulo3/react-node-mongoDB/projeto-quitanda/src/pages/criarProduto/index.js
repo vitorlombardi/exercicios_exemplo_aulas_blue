@@ -10,7 +10,7 @@ const baseUrl = "http://localhost:5000";
 export default function Criar () {
   const {id} = useParams();
   console.log(id)
-
+  console.log(useParams())
     const [nomeProduto, setNomeProduto] = useState("");
     const [imagemProduto, setImagemProduto] = useState("");
     const [valorProduto, setValorProduto] = useState("");
