@@ -1,0 +1,38 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 800px;
+}
+
+article img{
+    width: 800px;
+    max-height: 350px;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+article p{
+   
+    align-items: center;
+    font-size: 1rem;
+}
+article strong{
+    font-size: 1.3rem;
+}
