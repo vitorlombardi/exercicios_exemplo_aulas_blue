@@ -34,3 +34,7 @@ ul{
     gap: 1.5rem;
 }
 
+.bloco-nav a:hover{
+    color: white;
+    font-weight: bolder;
+}

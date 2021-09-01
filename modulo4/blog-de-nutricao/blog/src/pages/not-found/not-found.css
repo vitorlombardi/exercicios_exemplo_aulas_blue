@@ -1,0 +1,29 @@
+.not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.not-found img{
+    width: 300px;
+}
+
+.not-found a{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #90da90;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 9rem;
+    height: 1rem;
+    text-align: center;
+}
+
+.not-found a:hover{
+    cursor: pointer;
+    background-color:aquamarine;
+    box-shadow: 0.2rem 0.2rem #90da90 ;
+}
