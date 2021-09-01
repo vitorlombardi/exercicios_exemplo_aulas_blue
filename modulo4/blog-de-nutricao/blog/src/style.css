@@ -56,6 +56,11 @@ body{
     border-radius: 8px;
 }
 
+.corpo article img:hover{
+    border: 2px solid #90da90;
+    border-radius:8px;
+}
+
 .corpo article p{
    
     align-items: center;

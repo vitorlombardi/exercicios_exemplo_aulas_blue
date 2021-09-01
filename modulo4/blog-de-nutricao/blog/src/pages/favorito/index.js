@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./favorito.css";
+import { toast } from "react-toastify"
 
 export default function Favoritos() {
   const [post, setPost] = useState([]);
@@ -14,7 +15,7 @@ export default function Favoritos() {
     let filtroPostId = post.filter((f) => f.id !== id);
     setPost(filtroPostId);
     localStorage.setItem("posts", JSON.stringify(filtroPostId));
-    alert("filme excluido com sucesso ✖");
+    toast.error("filme excluido com sucesso ✖");
   }
 
   return (

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import "./post-id.css";
 import { Requisicao } from "../../services/requisicao";
+import { toast } from "react-toastify"
 
 export default function PostPorId() {
   const { id } = useParams();
@@ -30,12 +31,12 @@ export default function PostPorId() {
     const temPost = PostSalvos.some((postSalvo) => postSalvo.id === post.id);
 
     if (temPost) {
-      alert("Esse post já esta salvo ✔");
+      toast.info("Esse post já esta salvo ✔");
       return;
     }
     PostSalvos.push(post);
     localStorage.setItem("posts", JSON.stringify(PostSalvos));
-    alert("Post salvo com sucesso ^_^");
+    toast.success("Post salvo com sucesso ^_^");
   }
 
   if (loading) {
@@ -51,19 +52,15 @@ export default function PostPorId() {
   }
 
   return (
-    <div className="conteiner-por-id">
+    <div className="conteiner">
       <div className="info">
-        <div className="corpo-por-id">
+        <div className="corpo">
           <article key={post.id}>
-            <div className="img-e-botao">
-              <img src={post.capa} alt={post.categoria} />
-              <button onClick={salvaPost}>Salvar</button>
-            </div>
-            <div className="titulo-e-subtitulo">
               <strong>{post.titulo}</strong>
               <br />
+              <img src={post.capa} alt={post.categoria} />
               <p>{post.subtitulo}</p>
-            </div>
+              <button onClick={salvaPost}>Salvar</button>
           </article>
         </div>
       </div>
